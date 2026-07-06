@@ -8,7 +8,7 @@
 
   <br />
 
-  [![Live Demo](https://img.shields.io/badge/PLAY_THE_LIVE_DEMO-FF2A2A?style=for-the-badge&logo=vercel&logoColor=white)](https://carrer-forge-demo.vercel.app/)
+  [![Live Demo](https://img.shields.io/badge/PLAY_THE_LIVE_DEMO-FF2A2A?style=for-the-badge&logo=vercel&logoColor=white)](https://career-forge-one-theta.vercel.app/)
 
   <br />
 </div>
