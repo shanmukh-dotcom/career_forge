@@ -59,7 +59,11 @@ const ChoosePath = () => {
   const handleGoalNext = () => {
     if (finalGoal) {
       setStep(2);
-      setPlaylistInput('https://www.youtube.com/playlist?list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8');
+      if (selectedId && recommendedPlaylists[selectedId]) {
+        setPlaylistInput(recommendedPlaylists[selectedId][0].url);
+      } else {
+        setPlaylistInput('');
+      }
     }
   };
 
@@ -75,6 +79,14 @@ const ChoosePath = () => {
     if (!isPlaylist && isSingleVideo) {
       setLoadingPlaylist(false);
       setPlaylistError('That looks like a single video link. Please paste a YouTube PLAYLIST URL (it must contain "list=" in the URL). Go to a playlist page on YouTube and copy the link from your browser\'s address bar.');
+      return;
+    }
+
+    // BYOK Check for custom playlists
+    const allRecommendedUrls = Object.values(recommendedPlaylists).flat().map(r => r.url);
+    if (!allRecommendedUrls.includes(playlistInput)) {
+      setLoadingPlaylist(false);
+      setPlaylistError('Custom playlists require an API key to process. Please click ⚙️ BYOK in the navbar to connect your API key first.');
       return;
     }
 
@@ -267,16 +279,6 @@ const ChoosePath = () => {
         )}
 
       </div>
-      
-      {/* MVP Side Notice */}
-      <div className="mvp-notice animate-fade-in" style={{animationDelay: '1s'}}>
-        <h4><ShieldCheck size={18} style={{marginRight: '0.5rem'}}/>MVP Prototype</h4>
-        <p>Welcome! Since this is an MVP demonstration, kindly select the <strong>Frontend Developer</strong> path to explore the pre-loaded curated experience.</p>
-        <p style={{marginTop: '0.8rem', fontSize: '0.85rem', color: 'var(--text-secondary)'}}>
-          <strong>How to use:</strong> Select Frontend, click Next, and use the default playlist provided to generate your AI Skill Map!
-        </p>
-      </div>
-
     </div>
   );
 };

@@ -91,6 +91,141 @@ const defaultVideos = {
         explanation: 'Every HTML element consists of content, padding, border, and margin. Margin creates space outside the border.'
       }
     ]
+  },
+  'XBu54ncjgSQ': {
+    topic: 'Backend Development',
+    summary: [
+      'This video introduces Backend Development, the server-side logic that powers websites and applications behind the scenes. Unlike frontend, which users see, backend handles data processing, storage, and secure retrieval.',
+      'You learn about the core components: servers (which listen for requests), databases (which store information like user accounts and posts), and APIs (Application Programming Interfaces) which act as the bridge between the frontend and the database.',
+      'The instructor explains popular backend languages like Node.js, Python, Java, and PHP, alongside common databases like PostgreSQL (relational) and MongoDB (NoSQL). Understanding how these interact is crucial for building scalable architecture.'
+    ],
+    keywords: ['Backend', 'Server', 'Database', 'API', 'Node.js', 'Python', 'SQL', 'NoSQL', 'Architecture'],
+    qna: [
+      { q: "What is an API?", a: "An Application Programming Interface acts as a bridge, allowing the frontend to request data from the backend database." },
+      { q: "What is the difference between SQL and NoSQL?", a: "SQL databases are relational and structured in tables, while NoSQL databases are non-relational and often store data as JSON documents." }
+    ],
+    questions: [
+      {
+        question: 'Which component is primarily responsible for storing user data?',
+        options: ['The Browser', 'The Database', 'The API', 'The UI'],
+        correctAnswer: 'The Database',
+        explanation: 'Databases (like PostgreSQL or MongoDB) securely store application data.'
+      },
+      {
+        question: 'What does a backend server do?',
+        options: ['Renders CSS', 'Listens for frontend requests and executes logic', 'Displays buttons', 'Handles local state'],
+        correctAnswer: 'Listens for frontend requests and executes logic',
+        explanation: 'The server receives requests from clients and processes the required backend logic.'
+      }
+    ]
+  },
+  'VPvVD8t02U8': {
+    topic: 'Mobile Development (Flutter)',
+    summary: [
+      'This crash course introduces Mobile App Development using Flutter, a UI toolkit created by Google for building natively compiled applications for mobile, web, and desktop from a single codebase.',
+      'The core concept taught is that in Flutter, "Everything is a Widget." You learn the difference between Stateless Widgets (which are immutable and do not change state) and Stateful Widgets (which can rebuild dynamically when data changes).',
+      'The video walks through setting up the Dart SDK and writing your first cross-platform app, demonstrating how hot-reload allows developers to see UI changes instantly without fully rebuilding the app.'
+    ],
+    keywords: ['Flutter', 'Mobile Development', 'Dart', 'Widget', 'Stateful', 'Stateless', 'Hot Reload', 'Cross-Platform'],
+    qna: [
+      { q: "What language does Flutter use?", a: "Flutter uses Dart, a modern object-oriented language optimized for fast apps on multiple platforms." },
+      { q: "What is the difference between Stateful and Stateless widgets?", a: "Stateless widgets cannot change after being built, while Stateful widgets can update dynamically based on user interaction." }
+    ],
+    questions: [
+      {
+        question: 'What is the primary advantage of Flutter?',
+        options: ['It uses HTML/CSS for mobile', 'It allows building cross-platform apps from a single codebase', 'It is only for iOS', 'It requires no programming'],
+        correctAnswer: 'It allows building cross-platform apps from a single codebase',
+        explanation: 'Flutter allows developers to write code once and deploy to both iOS and Android.'
+      },
+      {
+        question: 'In Flutter, what are UI elements called?',
+        options: ['Components', 'Elements', 'Widgets', 'Modules'],
+        correctAnswer: 'Widgets',
+        explanation: 'In Flutter, the entire UI is built using nested Widgets.'
+      }
+    ]
+  },
+  'c9Wg6Cb_YlU': {
+    topic: 'UI/UX Design',
+    summary: [
+      'This video introduces UI/UX Design focusing on Figma. UX (User Experience) is about how an app feels and functions, while UI (User Interface) is about how it looks visually.',
+      'The instructor explains Design Thinking, wireframing, and creating high-fidelity prototypes. You learn how to establish a design system using consistent typography, color palettes, and spacing.',
+      'A major focus is on Auto Layout in Figma, which allows designers to create responsive components that automatically resize and adapt based on their content, mirroring CSS flexbox behavior.'
+    ],
+    keywords: ['UI/UX', 'Figma', 'Wireframing', 'Prototyping', 'Design System', 'Auto Layout', 'Typography', 'User Experience'],
+    qna: [
+      { q: "What is Auto Layout in Figma?", a: "A feature that allows frames to adapt to their content dynamically, similar to Flexbox in web development." },
+      { q: "What is the difference between UI and UX?", a: "UX focuses on the logic, flow, and user journey, while UI focuses on the visual aesthetics and interactive elements." }
+    ],
+    questions: [
+      {
+        question: 'What is a Wireframe?',
+        options: ['A fully colored final design', 'A low-fidelity structural blueprint of a webpage or app', 'The backend code', 'A brand logo'],
+        correctAnswer: 'A low-fidelity structural blueprint of a webpage or app',
+        explanation: 'Wireframes are simple sketches focused on layout and structure, without styling details.'
+      },
+      {
+        question: 'Which tool is industry standard for collaborative UI design?',
+        options: ['MS Paint', 'Figma', 'Visual Studio Code', 'MongoDB'],
+        correctAnswer: 'Figma',
+        explanation: 'Figma is a cloud-based design tool widely used for UI/UX prototyping.'
+      }
+    ]
+  },
+  'i_LwzRVP7bg': {
+    topic: 'AI & Machine Learning',
+    summary: [
+      'This course introduces the fundamentals of AI and Machine Learning. Machine Learning is a subset of AI where systems learn from data to identify patterns and make decisions without explicit programming.',
+      'The video covers Supervised Learning (training on labeled data), Unsupervised Learning (finding hidden patterns in unlabeled data), and Reinforcement Learning (learning through trial and error rewards).',
+      'It also explains basic concepts of Neural Networks, which are modeled after the human brain and consist of input layers, hidden computational layers, and output layers to process complex data like images and text.'
+    ],
+    keywords: ['Artificial Intelligence', 'Machine Learning', 'Supervised Learning', 'Unsupervised Learning', 'Neural Networks', 'Training Data', 'Algorithms'],
+    qna: [
+      { q: "What is Supervised Learning?", a: "A type of machine learning where the model is trained on a labeled dataset, meaning the answers are provided during training." },
+      { q: "What is a Neural Network?", a: "A computing system inspired by biological neural networks, consisting of interconnected nodes (neurons) arranged in layers." }
+    ],
+    questions: [
+      {
+        question: 'Which type of learning involves training a model with labeled data?',
+        options: ['Supervised Learning', 'Unsupervised Learning', 'Reinforcement Learning', 'Deep Learning'],
+        correctAnswer: 'Supervised Learning',
+        explanation: 'Supervised learning uses labeled datasets to train algorithms to classify data or predict outcomes.'
+      },
+      {
+        question: 'What is the primary difference between standard programming and machine learning?',
+        options: ['Standard programming is faster', 'ML systems learn patterns from data instead of relying on explicit rules', 'ML only works on supercomputers', 'There is no difference'],
+        correctAnswer: 'ML systems learn patterns from data instead of relying on explicit rules',
+        explanation: 'Instead of hardcoding rules, ML models infer rules by analyzing large amounts of data.'
+      }
+    ]
+  },
+  'bPVaOlJ6ln0': {
+    topic: 'Cybersecurity',
+    summary: [
+      'This video provides an overview of Cybersecurity, the practice of protecting systems, networks, and programs from digital attacks.',
+      'The instructor explains the CIA Triad: Confidentiality (keeping data secret), Integrity (ensuring data is not altered), and Availability (ensuring systems remain accessible to authorized users).',
+      'The lesson covers common threats such as Phishing, Malware, and SQL Injection, and emphasizes the importance of encryption, multi-factor authentication, and ethical hacking (penetration testing) to identify vulnerabilities before malicious hackers do.'
+    ],
+    keywords: ['Cybersecurity', 'CIA Triad', 'Encryption', 'Phishing', 'Malware', 'Ethical Hacking', 'Penetration Testing', 'Vulnerabilities'],
+    qna: [
+      { q: "What is the CIA Triad?", a: "A foundational concept in cybersecurity standing for Confidentiality, Integrity, and Availability." },
+      { q: "What is Phishing?", a: "A social engineering attack where attackers deceive users into revealing sensitive information by pretending to be a trustworthy entity." }
+    ],
+    questions: [
+      {
+        question: 'Which component of the CIA Triad ensures that data is not altered by unauthorized parties?',
+        options: ['Confidentiality', 'Integrity', 'Availability', 'Authorization'],
+        correctAnswer: 'Integrity',
+        explanation: 'Integrity ensures data is accurate and unchanged.'
+      },
+      {
+        question: 'What is Penetration Testing?',
+        options: ['Testing how fast a website loads', 'Authorized simulated cyberattacks to find security weaknesses', 'Creating strong passwords', 'Encrypting hard drives'],
+        correctAnswer: 'Authorized simulated cyberattacks to find security weaknesses',
+        explanation: 'Ethical hackers perform penetration testing to identify vulnerabilities before malicious hackers can exploit them.'
+      }
+    ]
   }
 };
 
@@ -172,7 +307,59 @@ export const getFlashcards = async (goalId = null) => {
 
 export const getPlaylistVideos = async (playlistUrl) => {
     await delay(800);
-    // Always return the HTML/CSS mock playlist for now
+    
+    // Check which playlist was requested based on the known recommended URLs
+    if (playlistUrl.includes('PLdvOfoe7PXT0ouChAnR1nHlT8BJIo5hP_')) { // UI/UX
+      return {
+        data: [
+          { videoId: 'c9Wg6Cb_YlU', title: 'Figma Tutorial for UI Design', url: 'https://www.youtube.com/watch?v=c9Wg6Cb_YlU', embedUrl: 'https://www.youtube.com/embed/c9Wg6Cb_YlU' },
+          { videoId: 'uiux-2', title: 'Design Thinking Process', url: 'https://www.youtube.com/watch?v=uiux-2', embedUrl: 'https://www.youtube.com/embed/uiux-2' },
+          { videoId: 'uiux-3', title: 'Wireframing Basics', url: 'https://www.youtube.com/watch?v=uiux-3', embedUrl: 'https://www.youtube.com/embed/uiux-3' }
+        ]
+      };
+    }
+    
+    if (playlistUrl.includes('PL9ooVrP1hQOHUfd-g8GUpKI3hHOwM_9Dn')) { // AI
+      return {
+        data: [
+          { videoId: 'i_LwzRVP7bg', title: 'Machine Learning for Everybody', url: 'https://www.youtube.com/watch?v=i_LwzRVP7bg', embedUrl: 'https://www.youtube.com/embed/i_LwzRVP7bg' },
+          { videoId: 'ai-2', title: 'Intro to Neural Networks', url: 'https://www.youtube.com/watch?v=ai-2', embedUrl: 'https://www.youtube.com/embed/ai-2' },
+          { videoId: 'ai-3', title: 'Python for Data Science', url: 'https://www.youtube.com/watch?v=ai-3', embedUrl: 'https://www.youtube.com/embed/ai-3' }
+        ]
+      };
+    }
+    
+    if (playlistUrl.includes('PLWKjhJtqVAbn21gs5UnLhCQ82f923WCgM')) { // Backend
+      return {
+        data: [
+          { videoId: 'XBu54ncjgSQ', title: 'What is Backend Development?', url: 'https://www.youtube.com/watch?v=XBu54ncjgSQ', embedUrl: 'https://www.youtube.com/embed/XBu54ncjgSQ' },
+          { videoId: 'backend-2', title: 'Node.js Crash Course', url: 'https://www.youtube.com/watch?v=backend-2', embedUrl: 'https://www.youtube.com/embed/backend-2' },
+          { videoId: 'backend-3', title: 'REST APIs Explained', url: 'https://www.youtube.com/watch?v=backend-3', embedUrl: 'https://www.youtube.com/embed/backend-3' }
+        ]
+      };
+    }
+    
+    if (playlistUrl.includes('PLTjRvDozrdlxzQet01qZBt-sRG8bbDggv')) { // Mobile
+      return {
+        data: [
+          { videoId: 'VPvVD8t02U8', title: 'Flutter Course for Beginners', url: 'https://www.youtube.com/watch?v=VPvVD8t02U8', embedUrl: 'https://www.youtube.com/embed/VPvVD8t02U8' },
+          { videoId: 'mobile-2', title: 'Dart Programming Tutorial', url: 'https://www.youtube.com/watch?v=mobile-2', embedUrl: 'https://www.youtube.com/embed/mobile-2' },
+          { videoId: 'mobile-3', title: 'Building your first App', url: 'https://www.youtube.com/watch?v=mobile-3', embedUrl: 'https://www.youtube.com/embed/mobile-3' }
+        ]
+      };
+    }
+    
+    if (playlistUrl.includes('PLOspHqNVtKADkWLFt9OcziQF7EatuANSY')) { // Cyber
+      return {
+        data: [
+          { videoId: 'bPVaOlJ6ln0', title: 'Cyber Security In 7 Minutes', url: 'https://www.youtube.com/watch?v=bPVaOlJ6ln0', embedUrl: 'https://www.youtube.com/embed/bPVaOlJ6ln0' },
+          { videoId: 'cyber-2', title: 'Ethical Hacking Basics', url: 'https://www.youtube.com/watch?v=cyber-2', embedUrl: 'https://www.youtube.com/embed/cyber-2' },
+          { videoId: 'cyber-3', title: 'Network Security Fundamentals', url: 'https://www.youtube.com/watch?v=cyber-3', embedUrl: 'https://www.youtube.com/embed/cyber-3' }
+        ]
+      };
+    }
+
+    // Default to Frontend / HTML CSS
     return {
       data: [
         { videoId: 'UB1O30fR-EE', title: 'HTML Crash Course For Absolute Beginners', url: 'https://www.youtube.com/watch?v=UB1O30fR-EE', embedUrl: 'https://www.youtube.com/embed/UB1O30fR-EE' },

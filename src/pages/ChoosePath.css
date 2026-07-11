@@ -219,32 +219,4 @@
   min-width: 24px;
 }
 
-/* MVP Notice */
-.mvp-notice {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  bottom: auto;
-  background-color: var(--bg-color-light);
-  border: 1px solid var(--accent-red);
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  max-width: 260px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 15px rgba(211, 47, 47, 0.2);
-  z-index: 100;
-}
 
-.mvp-notice h4 {
-  display: flex;
-  align-items: center;
-  color: var(--accent-red);
-  margin-bottom: 0.4rem;
-  font-family: var(--font-serif);
-  font-size: 0.95rem;
-}
-
-.mvp-notice p {
-  font-size: 0.8rem;
-  line-height: 1.4;
-  color: var(--text-primary);
-}
